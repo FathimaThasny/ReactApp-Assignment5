@@ -6,10 +6,6 @@ const jwt = require("jsonwebtoken")
 const path = require('path')
 
 
-const  fileURLToPath  = require("url");
-// const __filename = fileURLToPath(import.meta.url)
-// const __dirname = path.dirname(__filename)
-
 
 const { employeeModel } = require('./Model/Employeelist.js')
 const { userModel } = require('./Model/usermodel.js')
