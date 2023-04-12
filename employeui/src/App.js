@@ -9,7 +9,7 @@ import { Register } from './components/Register';
 
 function App() {
   return (
-    <BrowserRouter basename='/EmployeeReactApp'>
+    <BrowserRouter basename='/ReactApp-Assignment5'>
     <Routes>
 
       <Route path='/' exact element={ <Register/> } />
