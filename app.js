@@ -12,7 +12,7 @@ const { userModel } = require('./Model/usermodel.js')
 
 const app = express()
 
-app.use(express.static(path.join(__dirname, './employeui/build')))
+app.use(express.static(path.join(__dirname + '/employeui/build')))
 
 app.use(cors())
 app.use(bodyparser.json())
@@ -163,11 +163,11 @@ app.post('/modify', async(req,res)=>{
     })
 })
 
-
-app.get('*',(req,res)=>{
-    res.sendFile(path.join(__dirname + './employeui/build/index.html'))
-})
-
 app.listen(2000,()=>{
     console.log("Server Running at 2000")
 })
+
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname + '/employeui/build/index.html'))
+})
+
